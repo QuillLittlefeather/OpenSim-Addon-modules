@@ -1,0 +1,33 @@
+<Project frameworkVersion="v4_0" name="Quill.Region.Modules" path="addon-modules/QuillModules/ServerReleaseNotes" type="Library">
+  <Configuration name="Debug">
+    <Options>
+      <OutputPath>../../../bin</OutputPath>
+    </Options>
+  </Configuration>
+  <Configuration name="Release">
+    <Options>
+      <OutputPath>../../../bin</OutputPath>
+    </Options>
+  </Configuration>
+ 
+  <ReferencePath>../../../../bin</ReferencePath>
+  <Reference name="System"/>
+  <Reference name="log4net"/>
+  <Reference name="Mono.Addins"/>
+  <Reference name="Nini"/>
+  <Reference name="OpenMetaverse"/>
+  <Reference name="OpenMetaverse.StructuredData"/>
+  <Reference name="OpenMetaverseTypes"/>
+  <Reference name="OpenSim.Framework"/>
+  <Reference name="OpenSim.Region.Framework"/>
+  <Reference name="OpenSim.Services.Interfaces"/>
+  <Reference name="OpenSim.Framework.Servers.HttpServer"/>
+  <Reference name="OpenSim.Capabilities"/>
+  <Reference name="OpenSim.Region.ClientStack.LindenCaps"/>
+  <Reference name="OpenSim.Region.ClientStack.LindenUDP"/>
+ 
+  <Files>
+    <Match pattern="*.cs" recurse="true"/>
+    <Match path="Resources" pattern="*.*" buildAction="EmbeddedResource"/>
+  </Files>
+</Project>
